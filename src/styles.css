@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body {
-  min-width: 0 !important;
-}
-
-#zmmtg-root {
+/* // Remove irrelevent overlay element addedd in v1.7.5 update */
+#zmmtg-root > div.meeting-app > .loading-layer {
   display: none;
+}
+/* Hiding New layer added in v1.8.5 */
+.root-inner {
+  display: none !important;
 }
